@@ -1,4 +1,5 @@
 #include "sdl2-ttf.h"
+#include <SDL_ttf.h>
 #include "mruby.h"
 #include "mruby/class.h"
 #include "mruby/data.h"
