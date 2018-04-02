@@ -1,6 +1,4 @@
 #include "sdl2-ttf.h"
-#include <SDL_ttf.h>
-#include "mruby.h"
 #include "mruby/class.h"
 #include "mruby/data.h"
 #include "mruby/array.h"
@@ -349,7 +347,7 @@ mrb_sdl2_ttf_font_get_size_UNICODE(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_text(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -369,7 +367,7 @@ mrb_sdl2_ttf_font_render_text(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UTF8(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -389,7 +387,7 @@ mrb_sdl2_ttf_font_render_UTF8(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UNICODE(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -409,7 +407,7 @@ mrb_sdl2_ttf_font_render_UNICODE(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_glyph(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -429,7 +427,7 @@ mrb_sdl2_ttf_font_render_glyph(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_text_shaded(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int fgr, fgg, fgb, fga, bgr, bgg, bgb, bga;
   SDL_Surface * c;
   SDL_Color fgcolor;
@@ -454,7 +452,7 @@ mrb_sdl2_ttf_font_render_text_shaded(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UTF8_shaded(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int fgr, fgg, fgb, fga, bgr, bgg, bgb, bga;
   SDL_Surface * c;
   SDL_Color fgcolor;
@@ -479,7 +477,7 @@ mrb_sdl2_ttf_font_render_UTF8_shaded(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UNICODE_shaded(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int fgr, fgg, fgb, fga, bgr, bgg, bgb, bga;
   SDL_Surface * c;
   SDL_Color fgcolor;
@@ -504,7 +502,7 @@ mrb_sdl2_ttf_font_render_UNICODE_shaded(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_glyph_shaded(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int fgr, fgg, fgb, fga, bgr, bgg, bgb, bga;
   SDL_Surface * c;
   SDL_Color fgcolor;
@@ -529,7 +527,7 @@ mrb_sdl2_ttf_font_render_glyph_shaded(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_text_blended(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -549,7 +547,7 @@ mrb_sdl2_ttf_font_render_text_blended(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UTF8_blended(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -569,7 +567,7 @@ mrb_sdl2_ttf_font_render_UTF8_blended(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UNICODE_blended(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -589,7 +587,7 @@ mrb_sdl2_ttf_font_render_UNICODE_blended(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_glyph_blended(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a;
   SDL_Surface * c;
   SDL_Color color;
@@ -609,7 +607,7 @@ mrb_sdl2_ttf_font_render_glyph_blended(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_text_blended_wrapped(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a, wrapLength;
   SDL_Surface * c;
   SDL_Color color;
@@ -629,7 +627,7 @@ mrb_sdl2_ttf_font_render_text_blended_wrapped(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UTF8_blended_wrapped(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a, wrapLength;
   SDL_Surface * c;
   SDL_Color color;
@@ -649,7 +647,7 @@ mrb_sdl2_ttf_font_render_UTF8_blended_wrapped(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_sdl2_ttf_font_render_UNICODE_blended_wrapped(mrb_state *mrb, mrb_value self)
 {
-  mrb_value text; 
+  mrb_value text;
   mrb_int r, g, b, a, wrapLength;
   SDL_Surface * c;
   SDL_Color color;
@@ -684,7 +682,7 @@ mrb_sdl2_ttf_font_get_kerning_size(mrb_state *mrb, mrb_value self)
 {
   mrb_int prev_index, index;
   mrb_get_args(mrb, "ii", &prev_index, &index);
-  return mrb_fixnum_value(TTF_GetFontKerningSize(mrb_sdl2_font_get_ptr(mrb, self), prev_index, index));	
+  return mrb_fixnum_value(TTF_GetFontKerningSize(mrb_sdl2_font_get_ptr(mrb, self), prev_index, index));
 }
 void
 mrb_mruby_sdl2_ttf_gem_init(mrb_state *mrb)
